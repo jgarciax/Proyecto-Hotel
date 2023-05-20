@@ -13,6 +13,8 @@ import Testimonial from './components/Testimonial/Testimonial'
 import Contact from './components/Contact/Contact'
 import Login from './components/Login/Login'
 import FormCuenta from './components/Login/FormCuenta'
+import HomeHotel from "./components/Hotel/HomeHotel"
+
 
 
 //Lugar de redireccionamientos para toda la pagina (o lugar de llamadera )
@@ -34,6 +36,7 @@ function App ()  {
           <Route path="/contact" exact component={Contact} />
           <Route path="/sign-in" exact component={Login} />
           <Route path="/register" exact component={FormCuenta} />
+          <Route path="/hotel" exact component={HomeHotel} />
         </Switch>
 
       </Router>

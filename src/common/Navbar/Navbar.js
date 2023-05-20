@@ -51,6 +51,11 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link to='/hotel' onClick={closeMobileMenu}>
+                Hoteles
+              </Link>
+            </li>
           </ul>
 
           <div className='login-area flex'>
@@ -106,6 +111,7 @@ const Navbar = () => {
                 <h4>Mail Us</h4>
                 <Link to='/contact'>info@exampal.com</Link>
               </div>
+              
             </div>
           </div>
         </div>

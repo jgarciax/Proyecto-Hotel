@@ -13,8 +13,9 @@ export const login = async (email, password) =>{
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Correo o Contraseña Incorrecta!',
+            text: 'Correo o ContraseÃ±a Incorrecta!',
         })
 
     }
 }
+

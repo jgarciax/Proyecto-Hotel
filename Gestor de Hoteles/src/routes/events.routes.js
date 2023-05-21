@@ -6,6 +6,6 @@ const {validateJWT} = require('../middlewares/validate-jwt');
 
 const api = Router();
 
-api.post('/create-event', validateJWT, createEvents);
+api.post('/create-event', createEvents);
 
 module.exports = api;

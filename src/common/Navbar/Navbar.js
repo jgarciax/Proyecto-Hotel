@@ -52,8 +52,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/hotel' onClick={closeMobileMenu}>
-                Hoteles
+              <Link to='/evento' onClick={closeMobileMenu}>
+                Añadir Evento
               </Link>
             </li>
           </ul>

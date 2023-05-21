@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link } from 'react-router-dom/dist'
+
 
 const BlogCard = ({item: {id, date, catgeory, title, cover, para, desc}}) => {
   return (

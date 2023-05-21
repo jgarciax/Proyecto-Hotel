@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../SinglePage/SinglePage.css'
 import HeadTitle from '../common/HeadTitle/HeadTitle'
-import { Link, useParams } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link, useParams } from "react-router-dom"
 import Sdata from '../components/Destinations/Sdata'
 import EmptyFile from '../common/EmptyFile/EmptyFile'
 

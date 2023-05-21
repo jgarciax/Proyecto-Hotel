@@ -11,11 +11,12 @@ export const EventAdd = () =>{
     const [event,setEvent] = useState('')
     const [eventType,setEventType] = useState('')
     const [date,setDate] = useState('')
+    const [hotel,setHotel] = useState('')
 
     const imprimir = async(e)=>{
         e.preventDefault()
 
-        const result = await createEvent(event, eventType,date)
+        const result = await createEvent(event,eventType,date,hotel)
         if (result) {
             Swal.fire({
             icon: 'success',
@@ -24,9 +25,9 @@ export const EventAdd = () =>{
             confirmButtonText: "Ok"
             }).then((r) => {
             if (r.isConfirmed) {
-                navigate('/eventos');
+                navigate('/destination');
             } else {
-                navigate('/eventos');
+                navigate('/destination');
             }
             });
         } 
@@ -61,6 +62,14 @@ export const EventAdd = () =>{
         className="form-control mb-3"
         value={date}
         onChange={(e)=>setDate(e.target.value)}
+        />
+
+    <input
+        type="text"
+        placeholder="Hotel"
+        className="form-control mb-3"
+        value={hotel}
+        onChange={(e)=>setHotel(e.target.value)}
         />
         
                 <hr />

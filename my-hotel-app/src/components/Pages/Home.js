@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <HomeAbout />
       <MostPopular />
       <DestinationHome />
       <Works />

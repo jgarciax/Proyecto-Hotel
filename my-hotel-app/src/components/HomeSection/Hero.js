@@ -3,8 +3,6 @@ import Slide from './Slide'
 import Data from './Data'
 import '../HomeSection/Home.css'
 
-
-
 const Hero = () => {
   return (
     <>

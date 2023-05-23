@@ -2,6 +2,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { createEvent } from "./Api/EventoApi"
 import { useNavigate } from "react-router-dom";
+import "./EventAdd.css"
 
 
 

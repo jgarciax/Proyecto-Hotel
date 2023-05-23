@@ -9,7 +9,7 @@ const Works = () => {
         <section className='popular works'>
             <div className='container'>
                 <div className='heading'>
-                    <h1>How Is Works</h1>
+                    <h1>¿Cómo funciona?</h1>
                     <div className='line'></div>
                 </div>
                 <div className='content grid'>

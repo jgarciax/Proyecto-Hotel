@@ -8,6 +8,8 @@ const Gallery = () => {
     return (
     <>
         <HeadTitle />
+
+        
         <section className='gallery top'>
             <div className='container grid'>
                 {GalleryData.map((value) =>{

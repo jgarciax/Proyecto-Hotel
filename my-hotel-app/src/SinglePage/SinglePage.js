@@ -32,33 +32,32 @@ const SinglePage = () => {
                 <div className='main-content'>
                     <img src={item.image}/>
                     <p>{item.desc}</p>
-                    <p>{item.desc}</p>
+                    <p>{item.info}</p>
                     <div className='para flex_space'>
-                        <p>{item.sidepara}</p>
-                        <p>{item.sidepara}</p>
+                        <p>{item.info2}</p>
+                        <p>{item.info3}</p>
                     </div>
-                    <h1>What is the {item.title} City?</h1>
+                    <h1>Hablemos de {item.title} la ciudad?</h1>
                     <p>{item.desc}</p>
                     <div className='image grid1'>
                         <img src={item.paraImage_one}></img>
                         <img src={item.paraImage_two}></img>
                     </div>
-                    <p>{item.desc}</p>
+                    <p>{item.tips}</p>
                 </div>    
 
                 <div className='side-content'>
                     <div className='box'>
-                    <h2>How can we Help you?</h2>
+                    <h2>¿Cómo podemos ayudarte?</h2>
                     <ip>{item.sidepara}</ip><p></p>
                     <button className='outline-btn'>
                         <i className='fa fa-phone-alt'></i>
-                        Contact Us
+                        Contáctanos
                     </button>
                     </div>
                         <div className='box2'>
-                        <ip>{item.sidepara}</ip>
+                        <ip>{item.information}</ip>
                         </div>
-
                 </div>
             </article>
             </div>

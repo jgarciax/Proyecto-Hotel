@@ -22,6 +22,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link to='/hotel' onClick={closeMobileMenu}>
+                Hotel
+              </Link>
+            </li>
+            <li>
               <Link to='/about' onClick={closeMobileMenu}>
                 About us
               </Link>
@@ -42,18 +47,23 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/testimonial' onClick={closeMobileMenu}>
-                Testimonial
-              </Link>
-            </li>
-            <li>
               <Link to='/contact' onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>
             <li>
               <Link to='/evento' onClick={closeMobileMenu}>
+                Eventos
+              </Link>
+            </li>
+            <li>
+              <Link to='/addEvent' onClick={closeMobileMenu}>
                 Añadir Evento
+              </Link>
+            </li>
+            <li>
+              <Link to='/usuarios' onClick={closeMobileMenu}>
+                Usuarios
               </Link>
             </li>
           </ul>

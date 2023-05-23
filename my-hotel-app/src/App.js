@@ -9,11 +9,13 @@ import Destinations from './components/Destinations/Home'
 import SinglePage from './SinglePage/SinglePage'
 import Blog from './components/Blog/Blog'
 import BlogSingle from './components/Blog/blog-single-page/BlogSingle'
-import Testimonial from './components/Testimonial/Testimonial'
 import Contact from './components/Contact/Contact'
 import Login from './components/Login/Login'
 import FormCuenta from './components/Login/FormCuenta'
 import EventAdd from './components/EventoHotel/EventAdd '
+import ListUser from './components/User/component/ListUser'
+import HotelComponent from './components/Hotel/components/HotelComponent'
+import EventHome from './components/Event/EventHome'
 
 
 
@@ -27,17 +29,19 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/hotel" element={<HotelComponent />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/destination" element={<Destinations />} />
           <Route path="/singlepage/:id" element={<SinglePage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogsingle/:id" element={<BlogSingle />} />
-          <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sign-in" element={<Login />} />
           <Route path="/register" element={<FormCuenta />} />
-          <Route path="/evento" element={<EventAdd />} />
+          <Route path="/evento" element={<EventHome />} />
+          <Route path="/addEvent" element={<EventAdd />} />
+          <Route path="/usuarios" element={<ListUser />} />
         </Routes>
       </Router>
     </>

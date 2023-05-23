@@ -57,11 +57,7 @@ const createUser = async(req, res) =>{
             token: token,
         });
 
-        res.status(200).send({
-            message: `Usuario ${name} creado correctamente`,
-            ok: true,
-            usuario: usuario,
-        });
+        //sE ELIMINO DE LA 60 A LA 65
 
     }catch(error){
         console.log(error)
@@ -74,17 +70,21 @@ const createUser = async(req, res) =>{
 };
 
 //Listar Usuarios
+//cambios
 const readUser = async(req, res) =>{
-    if(req.user.rol === 'ADMINAPP'){
+    if(req.user.rol === 'ADMINAPP'||req.user.rol === 'CLIENT' ){ 
+
+
         try{
             const user = await Usuario.find();
     
             if(!user){
-                res.status(400).send({
+                res.status(404).send({
                     message: 'No hay usuarios disponibles'
                 })
-            }else{
-                res.status(200).json({"Usuarios encontrados": user});
+            } else {
+                //cambio
+                res.status(200).json(user);
             }
         }catch(error){
             throw new Error(error);

@@ -58,4 +58,21 @@ const createEvents = async(req, res) =>{
     }
 }
 
-module.exports = {createEvents}
+const readEvent = async(req, res) => {
+    try{
+        const event = await Events.find();
+
+        if(!event) {
+            res.status(400).send({
+                message: 'No hay eventos disponibles'
+            })
+        }else {
+            res.status(200).json({"Eventos encontrados": event});
+        }
+    }catch(error) {
+        throw new Error(error);
+    }
+}
+
+module.exports = {  createEvents,
+                    readEvent}

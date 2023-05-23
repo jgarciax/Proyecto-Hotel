@@ -1,0 +1,44 @@
+/* Estilos generales */
+.jumbotron {
+    background: url(../../../../public/Images/slider-1.jpg);
+    color: white;
+    padding: 20px;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #31b675;
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .card-text {
+    color: white;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      padding-top: 60px;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para las imágenes */
+  .card .cloudinary-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
